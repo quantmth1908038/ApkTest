@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff4f5">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                    <ImageView
+                        android:id="@+id/home_imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_home_top_violet" />
+
+                    <TextView
+                        android:id="@+id/text_greeting_bubble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/img_home_greeting_bubble"
+                        android:gravity="center"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="20dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_home_greeting_puppy"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_home_dog"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/home_tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_imageView"
+                    android:paddingLeft="20dp"
+                    android:textColor="#ff000000"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingBottom="5dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/home_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eff4f5"
+                android:fitsSystemWindows="true"
+                app:layout_constraintTop_toTopOf="0"
+                app:navigationIcon="@drawable/home_ic_head_list_a">
+
+                <ImageButton
+                    android:id="@+id/home_ib_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/home_ic_search_a" />
+
+                <ImageButton
+                    android:id="@+id/home_btn_sort"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_sort_black" />
+
+                <ImageButton
+                    android:id="@+id/home_btn_vip"
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:padding="1dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_pro" />
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/home_bottom_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="0">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/img_home_tab_lightblue"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="0" />
+
+                <ImageButton
+                    android:id="@+id/home_ib_calendar"
+                    android:layout_width="80dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/home_icon_tab_calendar_a"
+                    app:layout_constraintBottom_toBottomOf="0"
+                    app:layout_constraintLeft_toLeftOf="0" />
+
+                <ImageButton
+                    android:id="@+id/home_ib_mine"
+                    android:layout_width="80dp"
+                    android:layout_height="27dp"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@null"
+                    android:src="@drawable/home_icon_tab_me_a"
+                    app:layout_constraintBottom_toBottomOf="0"
+                    app:layout_constraintRight_toRightOf="0" />
+
+                <RadioButton
+                    android:id="@+id/home_btn_compile"
+                    android:layout_width="62dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="27dp"
+                    android:background="@drawable/home_ic_compile_c"
+                    android:button="@null"
+                    app:layout_constraintBottom_toBottomOf="0"
+                    app:layout_constraintLeft_toLeftOf="0"
+                    app:layout_constraintRight_toRightOf="0" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/home_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintLeft_toLeftOf="0"
+        app:layout_constraintRight_toRightOf="0"
+        app:layout_constraintTop_toTopOf="0" />
+
+    <LinearLayout
+        android:id="@+id/main_loading_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background=""
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/main_progressbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0" />
+
+    <View
+        android:id="@+id/maskview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background=""
+        android:visibility="invisible" />
+
+</android.support.constraint.ConstraintLayout>

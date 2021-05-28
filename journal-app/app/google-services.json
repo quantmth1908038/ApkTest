@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "591956310714",
+    "project_id": "testproject-8348d",
+    "storage_bucket": "testproject-8348d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591956310714:android:ebc4810c6838118edfa083",
+        "android_client_info": {
+          "package_name": "com.khammami.imerolium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591956310714-ufm5am0r6eqtfal4eg0mi1a8bq2vfodr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khammami.imerolium",
+            "certificate_hash": "585dc8a5e0c5a704fccb169144236d1b28cbb5f5"
+          }
+        },
+        {
+          "client_id": "591956310714-4cend99b9866hjd5m7ood9k0t64lsp6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQTpzAInXUE2B0mlfQNM6wyRGqMfVT7V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591956310714-4cend99b9866hjd5m7ood9k0t64lsp6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
